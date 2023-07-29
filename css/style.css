@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+/*font-family: 'Caprasimo', cursive;;*/
+
+/*reseteo css*/
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;}
+
+.fondo-general {
+    background-color:rgb(48, 25, 81);
+}
+
+.banner-header {
+    display: flex;
+}
+
+.imagenes-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.banner-letras {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.banner-cara {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
