@@ -45,7 +45,7 @@ nav {
     margin: 15px;
 }
 
-ul .nav-link {
+ul  li {
     list-style: none;
     text-decoration: none;
     justify-content: center;
@@ -53,6 +53,6 @@ ul .nav-link {
     padding: 10px;
     font-family: 'Caprasimo', cursive;
     color: black;
-    margin-top: 10px;
+    margin: 10px;
 }
 
