@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6,li {
     font-family: 'Caprasimo', cursive;
   }
  h1,h2 {
-    font-size: 48px;
+    font-size: 40px;
  }
 
 /*banner hasta fila 46*/
@@ -86,14 +86,14 @@ ul  li {
     border-color: black;
 }
 
-/*main index*/
+/*main index hasta fila 120*/
 
 .main-index {
     display: flex;
     flex-direction: column;
 }
 
-.area-principal-index {
+.area-principal-index, .area-derecha-index {
     display: flex;
     flex-direction: column;
     background-color: rgb(220, 136, 10);
@@ -109,4 +109,43 @@ ul  li {
     width: 100%;
     height: 40%;
     object-fit: cover;
+}
+
+.texto-area-principal-index {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*footer hasta fila*/
+
+footer {
+    background-color: rgb(220, 136, 10);
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: black;
+    border-width: 10px;
+    display: flex;
+}
+
+.area-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-footer {
+    display: flex;
+}
+
+.boton-footer {
+    display: flex;
+    width: 100px;
+    height: 100px;
 }
