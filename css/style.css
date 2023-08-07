@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
-/*font-family: 'Caprasimo', cursive;;*/
+/*font-family: 'Caprasimo', cursive;*/
 
 /*reseteo css*/
 *{padding: 0;
@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 10px;
 }
 
-/*nav hasta fila 88*/
+/*nav hasta fila 82*/
 
 nav, .nav-bar-desplegable {
     display: flex;
@@ -57,16 +57,6 @@ nav, .nav-bar-desplegable {
     border-radius: 10px;
     margin: 15px;
 }
-
-/* .nav-bar-desplegable {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(220, 136, 10);
-    border: outset 10px black;
-    border-radius: 10px;
-    margin: 15px;
-} */
 
 nav ul li {
     list-style: none;
@@ -79,6 +69,10 @@ nav ul li {
     margin: 10px;
 }
 
+.nav-link {
+    transition: 1s;
+}
+
 .nav-bar-css {
     background-color: rgb(220, 136, 10);
 }
@@ -87,7 +81,7 @@ nav ul li {
     border-color: black;
 }
 
-/*main index hasta fila 121*/
+/*main index hasta fila 115*/
 
 .main-index {
     display: flex;
@@ -120,7 +114,7 @@ nav ul li {
     align-items: center;
 }
 
-/*footer hasta fila 152*/
+/*footer hasta fila 147*/
 
 footer {
     background-color: rgb(220, 136, 10);
@@ -136,7 +130,8 @@ footer {
 .area-footer {
     display: flex;
     flex-direction: column-reverse;
-    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -145,15 +140,15 @@ footer {
     display: flex;
 }
 
-.boton-footer {
+.boton-footer img , .boton-footer{
     display: flex;
     width: 100px;
     height: 100px;
 }
 
-/*main historia hasta fila 174*/
+/*main historia hasta fila 173*/
 
-.labels-historia , .sector-der-historia , .card-historia {
+.labels-historia , .sector-der-historia , #carouselExampleCaptions {
     background-color: rgb(220, 136, 10);
     border-radius: 10px;
     border-style: outset;
@@ -162,7 +157,8 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    margin: 15px; 
+    margin: 15px;
+    align-items: center;
 }
 
 .labels-historia ul a , .labels-historia ul {
@@ -172,8 +168,11 @@ footer {
     font-family: 'Caprasimo', cursive;
     color: black;
 }
+.carousel-caption {
+    position: initial;
+}
 
-/*main jerarquias hasta fila 208*/
+/*main jerarquias hasta fila 207*/
 
 .area-sup-jera {
     background-color: rgb(220, 136, 10);
@@ -207,7 +206,7 @@ footer {
     color: black;
 }
 
-/* main misiones hasta fila 230 */
+/* main misiones hasta fila 225 */
 
 .sector-inf-texto, .cards-misiones {
     background-color: rgb(220, 136, 10);
@@ -215,12 +214,8 @@ footer {
     border-style: outset;
     border-color: black;
     border-width: 10px;
-    display: flex;
-    flex-direction: column;
     padding: 10px;
     margin: 15px;
-    justify-content: center;
-    align-items: center;
 }
 
 .cards-misiones img {
@@ -229,7 +224,7 @@ footer {
     object-fit: cover;
 }
 
-/* main bandas sonoras */
+/* main bandas sonoras hasta fila 277*/
 
 .seccion-bandas-sonoras {
     background-color: rgb(220, 136, 10);
@@ -244,14 +239,14 @@ footer {
     gap: 30px;
 }
 
-.cards-bandas img {
+.card-img-top {
     width: 100%;
     height: 40%;
     object-fit: cover;
     padding: 10px;
 }
 
-.cards-bandas {
+.card {
     border-style: solid;
     border-color: black;
     display: flex;
@@ -262,6 +257,8 @@ footer {
     position: relative;
     width: auto;
     height: fit-content;
+    background-color: rgb(220, 136, 10);
+    transition: 1s;
 }
 
 .cards-bandas div a {
@@ -271,4 +268,254 @@ footer {
     border-style: solid;
     padding: 5px;
     text-align: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* media queris */
+
+@media screen and (min-width: 576px) {
+    .fondo-general {
+        background-image: url(../images/naruto-sasuke-fondo-sitio-web.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    /* header */
+    .imagenes-banner {
+        display: flex;
+        flex-direction: row;
+    }
+    .banner-letras {
+        width: 100%;
+    }
+    .banner-cara {
+        width: 60%;
+    }
+
+    /* footer */
+    .area-footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* main index */
+
+    .area-principal-index {
+        flex-direction: row;
+        height: 550px;
+    }
+    
+    .imagen-izq-index {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .texto-area-principal-index {
+        width: 50%;
+        padding: 10px;
+        overflow-y: scroll;
+        scroll-behavior: auto;
+        height: 500px;
+        justify-content:flex-start;
+    }
+
+    /* main historia */
+    
+    .main-historia {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: max-content;
+    }
+    
+    .labels-historia {
+        grid-column: span 1;
+    }
+    
+    .carousel-caption {
+        grid-column: span 1;
+    }
+    
+    .sector-der-historia {
+        grid-column: span 2;
+    }
+
+    /* main misiones */
+
+    .main-misiones , .seccion-card-misiones {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: max-content;
+    }
+
+    .sector-inf-texto, .seccion-card-misiones {
+        grid-column: span 2;
+    }
+
+    .cards-misiones {
+        grid-column: span 1;
+    }
+    .cards-misiones img {
+        width: 100%;
+        height: 50%;
+    }
+
+    /* main bandas sonoras */
+
+    .seccion-bandas-sonoras {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: max-content;
+    }
+
+    .card {
+        grid-column: span 1;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /* navbar */
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapse {
+    justify-content: center;
+}
+
+/* main index */
+
+.main-index {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: max-content;
+}
+
+.area-principal-index {
+    grid-column: span 3;
+    height: 700px;
+}
+
+.texto-area-principal-index {
+    height: 650px;
+}
+
+.area-derecha-index {
+    grid-column: span 1;
+}
+
+/* main historia */
+
+.main-historia {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'a1 a2 a2 a2'
+    'a1 a2 a2 a2'
+    'a3 a2 a2 a2'
+    'a3 a2 a2 a2';
+}
+
+.labels-historia {
+    grid-area: a1;
+}
+
+.carousel-caption {
+    grid-area: a3;
+}
+
+.sector-der-historia {
+    grid-area: a2;
+    height: 710px;
+    overflow-y: scroll;
+}
+
+/* main jerarquias */
+
+.area-sup-jera{
+    flex-direction: row;
+    gap: 20px;
+}
+.imagen-area-sup-jera {
+    width: 60%;
+}
+
+.texto-area-sup-jera {
+    width: 40%;
+    text-align: center;
+}
+
+.main-jerarquias , .area-inferior-jerarquia{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: min-content;
+}
+
+.area-sup-jera ,.area-inferior-jerarquia {
+    grid-column: span 5;
+}
+
+.labels-jerarquia {
+    grid-column: span 2;
+    height: fit-content;
+}
+
+.sector-der-jerarquia {
+    grid-column: span 3;
+}
+
+/* main misiones */
+
+.sector-inf-texto {
+    text-align: center;
+}
+
+.seccion-card-misiones {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.cards-misiones {
+    width: 30%;
+}
+
+/* main bandas sonoras */
+
+.seccion-bandas-sonoras {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: max-content;
+}
+ .card {
+    grid-column: span 1;
+ }
+
+ /* hover */
+
+ .banner-letras:hover{
+    transform: scale(1.1);
+ }
+
+ .nav-link:hover {
+   font-size: 20px;
+ }
+
+.card:hover {
+    box-shadow: 5px 5px 5px 5px rgb(108, 108, 108);
+    background-color: rgb(152, 93, 4);
+    scale: 1.1;
+    border: solid 5px black;
+}
 }
