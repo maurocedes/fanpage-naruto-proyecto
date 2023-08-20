@@ -1,25 +1,11 @@
 .area-sup-jera {
-    background-color: rgb(220, 136, 10);
-    border-radius: 10px;
-    border-style: outset;
-    border-color: black;
-    border-width: 10px;
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 10px;
-    margin: 15px;   
+    @include bg-style;
+    @include flex(column-reverse,center,none);
 }
 
 .labels-jerarquia , .sector-der-jerarquia {
-    background-color: rgb(220, 136, 10);
-    border-radius: 10px;
-    border-style: outset;
-    border-color: black;
-    border-width: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 15px;   
+    @include bg-style;
+    @include flex(column,center,center)
 }
 
 .labels-jerarquia ul a , .labels-jerarquia ul {

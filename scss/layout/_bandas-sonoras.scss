@@ -1,37 +1,25 @@
 .seccion-bandas-sonoras {
-    background-color: rgb(220, 136, 10);
-    border-radius: 10px;
-    border-style: outset;
-    border-color: black;
-    border-width: 10px;
+    @include bg-style;
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin: 15px;
     gap: 30px;
     .card {
+        @include flex(column,center,center);
+        flex-wrap: wrap;
         border-style: solid;
         border-color: black;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         gap: 30px;
         position: relative;
         width: auto;
         height: fit-content;
-        background-color: rgb(220, 136, 10);
+        background-color: $bg-color;
         transition: .3s;
         .card-img-top {
-            width: 100%;
-            height: 40%;
-            object-fit: cover;
+            @include img-style(100%,100%,cover);
             padding: 10px;
         }
         .card-body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+           @include flex(column,center,center)
         }
     }
 }

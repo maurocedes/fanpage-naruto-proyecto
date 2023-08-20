@@ -1,0 +1,32 @@
+@mixin bg-style {
+    background-color: $bg-color;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: $border-color;
+    border-width: 10px;
+}
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin img-style($width,$height,$object) {
+    width: $width;
+    height: $height;
+    object-fit: $object;
+}
+
+
+@if $theme == akatsuki {
+        $bg-color: rgb(216, 27, 27);
+        $border-color: white;
+} @else if $theme == naruto {
+        $bg-color: rgb(220, 136, 10);
+        $border-color: black;
+} 
+

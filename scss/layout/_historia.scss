@@ -1,14 +1,10 @@
-.labels-historia , .sector-der-historia , #carouselExampleCaptions {
-    background-color: rgb(220, 136, 10);
-    border-radius: 10px;
-    border-style: outset;
-    border-color: black;
-    border-width: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 15px;
-    align-items: center;
+.labels-historia, #carouselExampleCaptions, .sector-der-historia {
+    @include bg-style;
+    @include flex(column,center, center);
+}
+
+.sector-der-historia {
+    justify-content: flex-start;
 }
 
 .labels-historia ul a , .labels-historia ul {

@@ -2,11 +2,25 @@
 
     //fondo sitio web
     .fondo-general {
-        background-image: url(../images/naruto-sasuke-fondo-web.jpeg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
+        @if $theme == akatsuki {
+            background-image: url(../images/fondo-akatsuki.jpeg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        } @else if $theme == naruto {
+            background-image: url(../images/naruto-sasuke-fondo-web.jpeg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        } @else {
+            background-image: url(../images/naruto-sasuke-fondo-web.jpeg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
     }
 
     //banner
@@ -131,18 +145,41 @@
     //animacion
 
     .animation-gif {
+        @if $theme == akatsuki {
+            background-image: url(../images/sasuke-corriendo.gif);
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        background-size:cover;
         display: flex;
         position: absolute;
-        width: 150px;
+        width: 250px;
+        height: 200px;
+        margin-top: -300px;
+        overflow: hidden;
+        margin-left: -300px;
+        animation-name: running;
+        animation-iteration-count: 2;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        } @else if $theme == naruto {
+            background-image: url(../images/naruto-corriendo.gif);
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        background-size:cover;
+        display: flex;
+        position: absolute;
+        width: 230px;
         height: 150px;
         margin-top: -270px;
         overflow: hidden;
-        margin-left: -200px;
+        margin-left: -300px;
         animation-name: running;
         animation-iteration-count: 2;
         animation-timing-function: linear;
         animation-duration: 3s;
         animation-delay: 1s;
+        }        
     }
 
     @keyframes running {
@@ -189,10 +226,11 @@
         'a3 a2 a2 a2';
         .labels-historia {
             grid-area: a1;
+            height: fit-content;
         }
         .sector-der-historia {
             grid-area: a2;
-            height: 710px;
+            height: 1000px;
             overflow-y: scroll;
         }
     }  
@@ -268,13 +306,4 @@
             }
         }
     }
-     
-    
-    
-    
-    
-    
-    
-
-
 }

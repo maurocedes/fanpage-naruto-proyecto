@@ -6,7 +6,7 @@
 }
 
 .fondo-general {
-  background-image: linear-gradient(to right, rgb(245, 177, 18), rgb(174, 30, 30));
+  background-image: linear-gradient(to right, rgb(216, 27, 27), black);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
   font-size: 40px;
+}
+
+p, li {
+  color: black;
 }
 
 .banner-header {
@@ -44,10 +48,13 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(220, 136, 10);
-  border: outset 10px black;
-  border-radius: 10px;
+  background-color: rgb(216, 27, 27);
+  padding: 10px;
   margin: 15px;
+  border-radius: 10px;
+  border-style: outset;
+  border-color: white;
+  border-width: 10px;
 }
 
 nav ul li {
@@ -66,7 +73,7 @@ nav ul li {
 }
 
 .nav-bar-css {
-  background-color: rgb(220, 136, 10);
+  background-color: rgb(216, 27, 27);
 }
 .nav-bar-css .menu-burger {
   border-color: black;
@@ -77,12 +84,12 @@ nav ul li {
 }
 
 footer {
-  background-color: rgb(220, 136, 10);
+  background-color: rgb(216, 27, 27);
   padding: 10px;
   margin: 15px;
   border-radius: 10px;
   border-style: outset;
-  border-color: black;
+  border-color: white;
   border-width: 10px;
   display: flex;
 }
@@ -110,12 +117,12 @@ footer .boton-footer img, footer .boton-footer {
 .main-index .area-principal-index {
   display: flex;
   flex-direction: column;
-  background-color: rgb(220, 136, 10);
+  background-color: rgb(216, 27, 27);
   padding: 10px;
   margin: 15px;
   border-radius: 10px;
   border-style: outset;
-  border-color: black;
+  border-color: white;
   border-width: 10px;
 }
 .main-index .area-principal-index .imagen-izq-index {
@@ -126,33 +133,40 @@ footer .boton-footer img, footer .boton-footer {
 .main-index .area-principal-index .texto-area-principal-index {
   display: flex;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .main-index .area-derecha-index {
   display: flex;
   flex-direction: column;
-  background-color: rgb(220, 136, 10);
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(216, 27, 27);
   padding: 10px;
   margin: 15px;
   border-radius: 10px;
   border-style: outset;
-  border-color: black;
+  border-color: white;
   border-width: 10px;
 }
 
-.labels-historia, .sector-der-historia, #carouselExampleCaptions {
-  background-color: rgb(220, 136, 10);
+.labels-historia, #carouselExampleCaptions, .sector-der-historia {
+  background-color: rgb(216, 27, 27);
+  padding: 10px;
+  margin: 15px;
   border-radius: 10px;
   border-style: outset;
-  border-color: black;
+  border-color: white;
   border-width: 10px;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin: 15px;
+  justify-content: center;
   align-items: center;
+}
+
+.sector-der-historia {
+  justify-content: flex-start;
 }
 
 .labels-historia ul a, .labels-historia ul {
@@ -168,27 +182,31 @@ footer .boton-footer img, footer .boton-footer {
 }
 
 .area-sup-jera {
-  background-color: rgb(220, 136, 10);
+  background-color: rgb(216, 27, 27);
+  padding: 10px;
+  margin: 15px;
   border-radius: 10px;
   border-style: outset;
-  border-color: black;
+  border-color: white;
   border-width: 10px;
   display: flex;
   flex-direction: column-reverse;
-  padding: 10px;
-  margin: 15px;
+  justify-content: center;
+  align-items: none;
 }
 
 .labels-jerarquia, .sector-der-jerarquia {
-  background-color: rgb(220, 136, 10);
+  background-color: rgb(216, 27, 27);
+  padding: 10px;
+  margin: 15px;
   border-radius: 10px;
   border-style: outset;
-  border-color: black;
+  border-color: white;
   border-width: 10px;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .labels-jerarquia ul a, .labels-jerarquia ul {
@@ -200,13 +218,13 @@ footer .boton-footer img, footer .boton-footer {
 }
 
 .sector-inf-texto, .cards-misiones {
-  background-color: rgb(220, 136, 10);
-  border-radius: 10px;
-  border-style: outset;
-  border-color: black;
-  border-width: 10px;
+  background-color: rgb(216, 27, 27);
   padding: 10px;
   margin: 15px;
+  border-radius: 10px;
+  border-style: outset;
+  border-color: white;
+  border-width: 10px;
 }
 
 .cards-misiones img {
@@ -216,46 +234,48 @@ footer .boton-footer img, footer .boton-footer {
 }
 
 .seccion-bandas-sonoras {
-  background-color: rgb(220, 136, 10);
+  background-color: rgb(216, 27, 27);
+  padding: 10px;
+  margin: 15px;
   border-radius: 10px;
   border-style: outset;
-  border-color: black;
+  border-color: white;
   border-width: 10px;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin: 15px;
   gap: 30px;
 }
 .seccion-bandas-sonoras .card {
-  border-style: solid;
-  border-color: black;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-color: black;
   gap: 30px;
   position: relative;
   width: auto;
   height: fit-content;
-  background-color: rgb(220, 136, 10);
+  background-color: rgb(216, 27, 27);
   transition: 0.3s;
 }
 .seccion-bandas-sonoras .card .card-img-top {
   width: 100%;
-  height: 40%;
+  height: 100%;
   object-fit: cover;
   padding: 10px;
 }
 .seccion-bandas-sonoras .card .card-body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 @media screen and (min-width: 576px) {
   .fondo-general {
-    background-image: url(../images/naruto-sasuke-fondo-web.jpeg);
+    background-image: url(../images/fondo-akatsuki.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -345,17 +365,21 @@ footer .boton-footer img, footer .boton-footer {
     font-size: 20px;
   }
   .animation-gif {
+    background-image: url(../images/sasuke-corriendo.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     position: absolute;
-    width: 150px;
-    height: 150px;
-    margin-top: -270px;
+    width: 250px;
+    height: 200px;
+    margin-top: -300px;
     overflow: hidden;
-    margin-left: -200px;
+    margin-left: -300px;
     animation-name: running;
     animation-iteration-count: 2;
     animation-timing-function: linear;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 1s;
   }
   @keyframes running {
@@ -392,10 +416,11 @@ footer .boton-footer img, footer .boton-footer {
   }
   .main-historia .labels-historia {
     grid-area: a1;
+    height: fit-content;
   }
   .main-historia .sector-der-historia {
     grid-area: a2;
-    height: 710px;
+    height: 1000px;
     overflow-y: scroll;
   }
   .carousel-caption {

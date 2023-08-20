@@ -4,35 +4,17 @@
     .area-principal-index {
         display: flex;
         flex-direction: column;
-        background-color: rgb(220, 136, 10);
-        padding: 10px;
-        margin: 15px;
-        border-radius: 10px;
-        border-style: outset;
-        border-color: black;
-        border-width: 10px;
+        @include bg-style;
         .imagen-izq-index {
-            width: 100%;
-            height: 40%;
-            object-fit: cover;
+            @include img-style(100%,40%,cover);
         }
         .texto-area-principal-index {
-            display: flex;
-            flex-direction: column;
+            @include flex(column, center, center);
             width: 100%;
-            justify-content: center;
-            align-items: center;
         }
     }
     .area-derecha-index {
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(220, 136, 10);
-        padding: 10px;
-        margin: 15px;
-        border-radius: 10px;
-        border-style: outset;
-        border-color: black;
-        border-width: 10px;     
+         @include flex(column, center, center);
+         @include bg-style;  
     }
 }

@@ -1,11 +1,5 @@
 footer {
-    background-color: rgb(220, 136, 10);
-    padding: 10px;
-    margin: 15px;
-    border-radius: 10px;
-    border-style: outset;
-    border-color: black;
-    border-width: 10px;
+    @include bg-style;
     display: flex;
     .area-footer {
         display: flex;

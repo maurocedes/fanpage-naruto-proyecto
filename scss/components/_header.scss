@@ -24,10 +24,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(220, 136, 10);
-    border: outset 10px black;
-    border-radius: 10px;
-    margin: 15px;
+    @include bg-style;
 }
 
 nav ul li {
@@ -46,7 +43,7 @@ nav ul li {
 }
 
 .nav-bar-css {
-    background-color: rgb(220, 136, 10);
+    background-color: $bg-color;
     .menu-burger {
         border-color: black;
     }

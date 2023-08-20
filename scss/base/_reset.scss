@@ -7,7 +7,13 @@
 }
 
 .fondo-general {
-    background-image: linear-gradient(to right, rgb(245, 177, 18), rgb(174, 30, 30));
+    @if $theme == akatsuki {
+        background-image: linear-gradient( to right, rgb(216, 27, 27), black);
+    } @else if $theme == naruto {
+        background-image: linear-gradient(to right, rgb(245, 177, 18), rgb(174, 30, 30))
+    } @else {
+        background-image: linear-gradient(to right, rgb(245, 177, 18), rgb(174, 30, 30))
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -16,4 +22,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1,h2 {
     font-size: 40px;
-}    
+}
+
+p, li {
+    color: black;
+}
