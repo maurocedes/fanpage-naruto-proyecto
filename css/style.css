@@ -72,6 +72,10 @@ nav ul li {
   border-color: black;
 }
 
+.animation-gif {
+  display: none;
+}
+
 footer {
   background-color: rgb(220, 136, 10);
   padding: 10px;
@@ -251,7 +255,7 @@ footer .boton-footer img, footer .boton-footer {
 
 @media screen and (min-width: 576px) {
   .fondo-general {
-    background-image: url(../images/naruto-sasuke-fondo-sitio-web.png);
+    background-image: url(../images/naruto-sasuke-fondo-web.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -339,6 +343,31 @@ footer .boton-footer img, footer .boton-footer {
   }
   .nav-link:hover {
     font-size: 20px;
+  }
+  .animation-gif {
+    display: flex;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: -270px;
+    overflow: hidden;
+    margin-left: -200px;
+    animation-name: running;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 1s;
+  }
+  @keyframes running {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(900px);
+    }
+    100% {
+      transform: translateX(1800px);
+    }
   }
   .main-index {
     display: grid;

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fondo-general {
+    background-image: linear-gradient(to right, rgb(245, 177, 18), rgb(174, 30, 30));
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Caprasimo', cursive;
+    color: black;
+}
+h1,h2 {
+    font-size: 40px;
+}    
