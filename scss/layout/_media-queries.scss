@@ -179,7 +179,24 @@
         animation-timing-function: linear;
         animation-duration: 3s;
         animation-delay: 1s;
-        }        
+        } @else {
+            background-image: url(../images/naruto-corriendo.gif);
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        background-size:cover;
+        display: flex;
+        position: absolute;
+        width: 230px;
+        height: 150px;
+        margin-top: -270px;
+        overflow: hidden;
+        margin-left: -300px;
+        animation-name: running;
+        animation-iteration-count: 2;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        }
     }
 
     @keyframes running {

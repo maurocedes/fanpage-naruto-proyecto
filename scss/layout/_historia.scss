@@ -3,6 +3,10 @@
     @include flex(column,center, center);
 }
 
+#carouselExampleCaptions {
+    height: fit-content;
+}
+
 .sector-der-historia {
     justify-content: flex-start;
 }
