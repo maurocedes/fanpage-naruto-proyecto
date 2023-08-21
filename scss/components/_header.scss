@@ -1,20 +1,16 @@
 .banner-header {
     display: flex;
+    height: fit-content;
     .imagenes-banner {
-        display: flex;
-        flex-direction: column;
+        @include flex(column,center,center);
         gap: 30px;
-        justify-content: center;
-        align-items: center;
         padding: 15px;
         .banner-letras {
-            width: 100%;
-            object-fit: cover;
+            @include img-style(100%,100%,0);
             margin-top: 20px;
         }
         .banner-cara {
-            width: 100%;
-            object-fit: cover;
+            @include img-style(100%,25%,cover);
             border-radius: 10px;
         }
     }

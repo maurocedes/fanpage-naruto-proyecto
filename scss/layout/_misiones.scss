@@ -5,3 +5,14 @@
 .cards-misiones img {
     @include img-style(100%,40%,cover);
 }
+
+.cards-misiones{
+    @include flex(column,0,center);
+}
+.letra-mision {
+    p {
+        font-family: 'Yuji Hentaigana Akebono', cursive;
+        font-size: 200px;
+        text-align: center;
+    }
+}
