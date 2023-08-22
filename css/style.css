@@ -225,6 +225,11 @@ footer .boton-footer img, footer .boton-footer {
   color: black;
 }
 
+.imagen-area-sup-jera {
+  width: 100%;
+  height: 100%;
+}
+
 .sector-inf-texto, .cards-misiones {
   background-color: rgb(220, 136, 10);
   padding: 10px;
@@ -296,7 +301,7 @@ footer .boton-footer img, footer .boton-footer {
 
 @media screen and (min-width: 576px) {
   .fondo-general {
-    background-image: url(../images/naruto-sasuke-fondo-web.jpeg);
+    background-image: url(../images/naruto-sasuke-fondo-web.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
