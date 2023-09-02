@@ -14,7 +14,10 @@
         }
     }
     .area-derecha-index {
-         @include flex(column, center, center);
-         @include bg-style;  
+        @include flex(column, center, center);
+        @include bg-style;
+        .imagen-dato-curioso {
+            @include img-style (100%,40%,cover)
+        } 
     }
 }
